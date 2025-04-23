@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="868.0" prefWidth="1572.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.plzz.Options">
+    <children>
+        <ImageView fitHeight="1177.0" fitWidth="1901.0" layoutX="-191.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../windows/wp5235369-circles-ultra-hd-wallpapers.jpg" />
+            </image>
+        </ImageView>
+
+        <Label layoutX="635.0" layoutY="139.0" prefHeight="71.0" prefWidth="553.0" text="Welcome! Who's logging in today?" textFill="#fffafa">
+            <font>
+                <Font name="Bodoni MT Bold" size="30.0" />
+            </font>
+        </Label>
+        <Button fx:id="adminButton" layoutX="552.0" layoutY="439.0" mnemonicParsing="false" onAction="#adminbuttonOnAction" prefHeight="84.0" prefWidth="255.0" style="-fx-background-color: #FFFFFF;" text="Admin">
+            <effect>
+                <Reflection />
+            </effect>
+            <font>
+                <Font name="Bodoni MT Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <!-- Admin Button and Icon -->
+        <ImageView fitHeight="71.0" fitWidth="126.0" layoutX="549.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../voting/image-removebg-preview%20(3).png" />
+            </image>
+        </ImageView>
+        <Button fx:id="voterButton" layoutX="993.0" layoutY="439.0" mnemonicParsing="false" onAction="#VoterbuttonOnAction" prefHeight="84.0" prefWidth="248.0" style="-fx-background-color: #FFFFFF;" text="Voter">
+            <effect>
+                <Reflection />
+            </effect>
+            <font>
+                <Font name="Bodoni MT Bold" size="18.0" />
+            </font>
+        </Button>
+
+        <!-- Center Image (Optional Logo) -->
+        <ImageView fitHeight="194.0" fitWidth="231.0" layoutX="132.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../voting/Vote-removebg-preview.png" />
+            </image>
+        </ImageView>
+
+        <!-- Welcome Text -->
+        <Text fill="#fffdfd" fontSmoothingType="LCD" layoutX="595.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Voting System. Please choose your role to continue. If you're a voter, you can cast your vote, view candidates, and check election results. If you're an admin, you'll have access to manage voters, candidates, election rules, and overall system settings. Select the appropriate option below to proceed to your dashboard." wrappingWidth="616.5366477966309">
+            <font>
+                <Font name="Bodoni MT Bold" size="27.0" />
+            </font>
+        </Text>
+
+              <!-- Voter Button and Icon -->
+        <ImageView fitHeight="98.0" fitWidth="139.0" layoutX="930.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../voting/box.png" />
+            </image>
+        </ImageView>
+      <Button fx:id="exitButton" layoutX="821.0" layoutY="830.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="79.0" prefWidth="194.0" style="-fx-background-color: #FFFFFF;" text="   Exit">
+         <font>
+            <Font name="Bodoni MT Bold" size="27.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <ImageView fitHeight="84.0" fitWidth="91.0" layoutX="804.0" layoutY="828.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../voting/exitt.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

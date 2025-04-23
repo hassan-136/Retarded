@@ -1,0 +1,11 @@
+Election Name: Local
+Election Type: NA
+Start Date: 2025-04-06
+End Date: 2025-04-07
+Open Voting: 2025-04-06
+Close Voting: 2025-04-07
+Rules: No rules
+Candidates:
+- h,2211111111111,jj,mm,resources/images/candidates/symbol_2211111111111.PNG,resources/images/candidates/profile_2211111111111.jpg
+- hassan,2222222222222,wq,wsd,resources/images/candidates/symbol_2222222222222.PNG,resources/images/candidates/profile_2222222222222.PNG
+------

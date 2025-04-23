@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="868.0" prefWidth="1572.0" style="-fx-background-color: #0f0f0f;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.plzz.ManageElections">
+
+    <!-- Background Image -->
+    <ImageView fitHeight="1177.0" fitWidth="1901.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../../../../../../windows/wp5235369-circles-ultra-hd-wallpapers.jpg" />
+        </image>
+    </ImageView>
+
+    <!-- LEFT SIDE: Election Setup -->
+    <VBox layoutX="238.0" layoutY="185.0" prefHeight="690.0" prefWidth="550.0" spacing="18.0" style="-fx-background-color: rgba(0, 0, 0, 0.6); -fx-padding: 20; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, #00ffe0, 10, 0.5, 0, 0);">
+
+        <Label style="-fx-font-size: 26px; -fx-text-fill: #00ffe0; -fx-font-weight: bold;" text="🗳️ Election Setup" />
+
+        <HBox spacing="10">
+            <Label style="-fx-text-fill: white;" text="Election Name:      " />
+            <TextField fx:id="electionNameField" prefHeight="26.0" prefWidth="307.0" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label style="-fx-text-fill: white;" text="Election Type:        " />
+            <TextField fx:id="electionTypeField" prefHeight="26.0" prefWidth="304.0" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label style="-fx-text-fill: white;" text="Start Date:             " />
+            <DatePicker fx:id="startDatePicker" prefHeight="26.0" prefWidth="301.0" />
+        </HBox>
+
+           <HBox spacing="10">
+            <Label style="-fx-text-fill: white;" text="End Date:               " />
+            <DatePicker fx:id="endDatePicker" prefHeight="26.0" prefWidth="300.0" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label style="-fx-text-fill: white;" text="Open Voting Date:" />
+            <DatePicker fx:id="openVoteDatePicker" prefHeight="26.0" prefWidth="302.0" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label style="-fx-text-fill: white;" text="Close Voting Date:" />
+            <DatePicker fx:id="closeVoteDatePicker" prefHeight="26.0" prefWidth="303.0" />
+        </HBox>
+
+        <Label style="-fx-text-fill: white;" text="Election Rules:" />
+        <TextArea fx:id="electionRulesField" prefHeight="100" prefWidth="500" />
+
+        <Button fx:id="createElectionButton" onAction="#handleCreateElection" style="-fx-background-color: linear-gradient(to right, #00ffe0, #007fff); -fx-text-fill: black; -fx-font-weight: bold; -fx-background-radius: 12; -fx-font-size: 14px;" text="➕ Create Election" />
+    </VBox>
+
+    <!-- RIGHT SIDE: Candidate Tools -->
+    <VBox layoutX="1069.0" layoutY="186.0" prefHeight="690.0" prefWidth="535.0" spacing="20.0" style="-fx-background-color: linear-gradient(to bottom right, rgba(0,255,224,0.25), rgba(0,188,212,0.25)); -fx-padding: 20; -fx-background-radius: 10;">
+
+    <Label style="-fx-font-size: 22px; -fx-text-fill:#00ffe0; -fx-font-weight: bold;" text="👥 Candidates (Loaded from file)" />
+      <Button fx:id="loadCandidatesButton" onAction="#handleLoadCandidates" style="-fx-background-color: linear-gradient(to right, #00ff99, #0099ff); -fx-text-fill: black; -fx-font-weight: bold; -fx-background-radius: 12;" text="📂 Load Candidates" textFill="#1b1a1a" />
+        <ListView fx:id="candidatesListView" prefHeight="140" />
+
+        <Button fx:id="linkCandidatesButton" onAction="#handleLinkCandidates" style="-fx-background-color: linear-gradient(to right, #00ff99, #0099ff); -fx-text-fill: black; -fx-font-weight: bold; -fx-background-radius: 12;" text="🔗 Link Candidates to Election" />
+
+        <Label style="-fx-font-size: 22px; -fx-text-fill: #00ffcc; -fx-font-weight: bold;" text="📄 Generate Report" />
+        <Button fx:id="generateReportButton" onAction="#handleGenerateReport" style="-fx-background-color: linear-gradient(to right, #2196F3, #00bfff); -fx-text-fill: black; -fx-font-weight: bold; -fx-background-radius: 12;" text="📊 Generate Report" />
+
+        <Label style="-fx-font-size: 22px; -fx-text-fill: #ffcc00; -fx-font-weight: bold;" text="📜 Past Elections" />
+        <ListView fx:id="pastElectionsListView" prefHeight="140" />
+    </VBox>
+   <Label layoutX="799.0" layoutY="118.0" text="Managing Elections" textFill="WHITE">
+      <font>
+         <Font name="Bodoni MT Bold" size="35.0" />
+      </font>
+   </Label>
+   <Button fx:id="backButton" layoutX="851.0" layoutY="863.0" onAction="#handleBack" prefHeight="43.0" prefWidth="170.0" style="-fx-background-color: linear-gradient(to right, #2196F3, #00bfff); -fx-text-fill: black; -fx-font-weight: bold; -fx-background-radius: 12;" text="Back" />
+
+</AnchorPane>

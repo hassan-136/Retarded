@@ -1,0 +1,6 @@
+hassan,9090909090909,112,resources\voter_images\9090909090909_WhatsApp Image 2025-04-04 at 14.51.24_1376c4e7.jpg
+hassan,5555555555555,1122,resources\voter_images\5555555555555_fahad 2.PNG
+j,9999090909090,8,resources\voter_images\9999090909090_mqdefault.jpg
+ali,1129090909090,qw,resources\voter_images\1129090909090_scarfy.png
+Hassan,7878787878654,776,resources\voter_images\7878787878654_WhatsApp Image 2025-04-04 at 14.51.24_1376c4e7.jpg
+ali,8888888888888,221,resources\voter_images\8888888888888_uml.png

@@ -1,0 +1,7 @@
+Ch Zia Ul Qamar,ziaqamar,chziahbl@gmail.com,1234,D:\plzz\admin_pictures\ziaqamar.png
+Hassan,hassan_jamal,hj123@gmail.com,1234,D:\plzz\admin_pictures\hassan_jamal.png
+Muhammad Ahmad Amin,ahmad,jsjkajksk@gmail.com,123,D:\plzz\admin_pictures\ahmad.png
+hassan Jamal,hassan_jamal1,234ggg@gmail.com,123,D:\plzz\admin_pictures\hassan_jamal.png
+fahad,fahad20,fahadahmad@gmail.com,fahad,D:\plzz\admin_pictures\fahad20.png
+Muhammad Ahmad Amin,ahmad1,hjdhjjhw@gmail.com,123,D:\plzz\admin_pictures\ahmad1.png
+Hassan Jamal,hassan1,hjamal@gmail.com,123,D:\plzz\admin_pictures\hassan1.png

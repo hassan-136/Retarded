@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="868.0" prefWidth="1572.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.plzz.AdminSignup">
+    <children>
+        <ImageView fitHeight="1177.0" fitWidth="1901.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../windows/wp5235369-circles-ultra-hd-wallpapers.jpg" />
+            </image>
+        </ImageView>
+      <FlowPane layoutX="481.0" layoutY="305.0" prefHeight="536.0" prefWidth="892.0" style="-fx-background-color: #FFFFFF40;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </FlowPane>
+        <ImageView fitHeight="194.0" fitWidth="231.0" layoutX="132.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../voting/Vote-removebg-preview.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="792.0" layoutY="235.0" text="Admin SignUp Page" textFill="WHITE">
+            <font>
+                <Font name="Bodoni MT Bold" size="41.0" />
+            </font>
+        </Label>
+        <Label layoutX="579.0" layoutY="347.0" text="Full Name" textFill="#fffcfc">
+            <font>
+                <Font name="Bodoni MT Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="579.0" layoutY="434.0" text="User Name" textFill="#fffcfc">
+            <font>
+                <Font name="Bodoni MT Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="601.0" layoutY="514.0" text="Email" textFill="#fffcfc">
+            <font>
+                <Font name="Bodoni MT Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="586.0" layoutY="595.0" text="Password" textFill="#fffcfc">
+            <font>
+                <Font name="Bodoni MT Bold" size="22.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnSignUp" layoutX="531.0" layoutY="717.0" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="66.0" prefWidth="194.0" style="-fx-background-color: #000000;" text="SignUp" textFill="WHITE" />
+        <Button fx:id="btnCancel" layoutX="1117.0" layoutY="707.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="66.0" prefWidth="194.0" style="-fx-background-color: #000000;" text="Cancel" textFill="WHITE" />
+        <Label layoutX="1146.0" layoutY="305.0" text="Profile Picture" textFill="#fffcfc">
+            <font>
+                <Font name="Bodoni MT Bold" size="22.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="imgProfile" fitHeight="227.0" fitWidth="253.0" layoutX="1118.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../voting/avatar.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="btnUpload" layoutX="1153.0" layoutY="619.0" mnemonicParsing="false" onAction="#handleUploadImage" prefHeight="51.0" prefWidth="118.0" style="-fx-background-color: #000000;" text="Upload" textFill="WHITE" />
+      <TextField fx:id="txtFullName" layoutX="721.0" layoutY="348.0" prefHeight="26.0" prefWidth="253.0" />
+      <TextField fx:id="txtUsername" layoutX="722.0" layoutY="434.0" prefHeight="26.0" prefWidth="254.0" />
+      <TextField fx:id="txtEmail" layoutX="723.0" layoutY="514.0" prefHeight="26.0" prefWidth="254.0" />
+      <TextField fx:id="txtPassword" layoutX="724.0" layoutY="593.0" prefHeight="26.0" prefWidth="254.0" />
+    </children>
+</AnchorPane>

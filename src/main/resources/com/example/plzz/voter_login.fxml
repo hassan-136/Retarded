@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="868.0" prefWidth="1572.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.plzz.VoterLogin">
+    <children>
+        <!-- Background Image -->
+        <ImageView fitHeight="1177.0" fitWidth="1901.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../windows/wp5235369-circles-ultra-hd-wallpapers.jpg" />
+            </image>
+        </ImageView>
+
+        <!-- Glass Panel -->
+        <FlowPane layoutX="736.0" layoutY="274.0" prefHeight="446.0" prefWidth="526.0" style="-fx-background-color: #FFFFFF40;">
+            <effect>
+                <DropShadow />
+            </effect>
+        </FlowPane>
+
+        <!-- Slogan Label (No neon) -->
+        <Label fx:id="sloganLabel" layoutX="798.0" layoutY="786.0" text="Your Voice, Your Power!" textFill="WHITE">
+            <font>
+                <Font name="Bodoni MT Bold" size="40.0" />
+            </font>
+        </Label>
+
+        <!-- Full Name Field -->
+        <Label layoutX="839.0" layoutY="314.0" text="Full Name:" textFill="WHITE">
+            <font>
+                <Font name="Bodoni MT" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="fullNameField" layoutX="998.0" layoutY="313.0" prefHeight="26.0" prefWidth="220.0" promptText="Enter your full name" />
+
+        <!-- CNIC Field -->
+        <Label layoutX="836.0" layoutY="389.0" text="Enter CNIC:" textFill="WHITE">
+            <font>
+                <Font name="Bodoni MT" size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="cnicField" layoutX="998.0" layoutY="389.0" prefHeight="26.0" prefWidth="220.0" promptText="13-digit CNIC" />
+
+        <!-- Captcha Section -->
+        <Label fx:id="captchaLabel" layoutX="980.0" layoutY="540.0" text="6709" textFill="WHITE">
+            <font>
+                <Font name="Bodoni MT Bold" size="31.0" />
+            </font>
+        </Label>
+        <TextField fx:id="captchaField" layoutX="898.0" layoutY="587.0" prefHeight="26.0" prefWidth="220.0" promptText="Answer" />
+
+        <!-- Message Label -->
+        <Label fx:id="messageLabel" layoutX="750.0" layoutY="450.0" textFill="YELLOW">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+
+        <!-- Logo Image -->
+        <ImageView fitHeight="157.0" fitWidth="156.0" layoutX="223.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../voting/Vote-removebg-preview.png" />
+            </image>
+        </ImageView>
+
+        <!-- Title Label -->
+        <Label fx:id="sloganLabel1" layoutX="927.0" layoutY="205.0" text="Voter Page" textFill="WHITE">
+            <font>
+                <Font name="Bodoni MT Bold" size="32.0" />
+            </font>
+        </Label>
+
+        <!-- Back Button -->
+        <Button fx:id="backButton" layoutX="1088.0" layoutY="629.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="144.0" style="-fx-background-color: #000000;" text="Back to Main Menu" textFill="WHITE" />
+
+        <!-- Login Button -->
+        <Button fx:id="loginButton" layoutX="805.0" layoutY="625.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="144.0" style="-fx-background-color: #000000;" text="Login" textFill="WHITE" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="908.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../voting/captch.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

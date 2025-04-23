@@ -1,0 +1,10 @@
+Election Name: CM Selection
+Election Type: Provincial
+Start Date: 2025-04-12
+End Date: 2025-04-13
+Open Voting: 2025-04-12
+Close Voting: 2025-04-13
+Rules: no rules
+Candidates:
+- khan
+------

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.plzz.Logo">
+   <children>
+      <!-- Full background image -->
+      <ImageView fitHeight="1177.0" fitWidth="1901.0" pickOnBounds="true" preserveRatio="false">
+         <image>
+            <Image url="@../../../../../../../voting/wp5235369-circles-ultra-hd-wallpapers.jpg" />
+         </image>
+      </ImageView>
+
+      <!-- Centered logo -->
+      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="837.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../voting/logoo.png" />
+         </image>
+      </ImageView>
+
+      <!-- Centered slogan below logo -->
+      <Label fx:id="slogan" layoutX="665.0" layoutY="740.0" prefHeight="48.0" prefWidth="745.0" text="Vote Fusion: The Future of Digital Voting" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="loadingLabel" layoutX="958.0" layoutY="703.0" text="Laoding..." textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progressBar" layoutX="786.0" layoutY="678.0" prefHeight="20.0" prefWidth="430.0" progress="0.0" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
